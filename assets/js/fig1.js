@@ -13,4 +13,18 @@ function changeChar() {
     $("section>div:nth-last-child(2)>h1").text(char[5]);
 }
 
-setInterval(changeChar, 800);
+let startBtn = $("#startBtn");
+let interval = null;
+
+startBtn.on('click', () => {
+
+    if (startBtn.text() === "Start") {
+        startBtn.text('Stop');
+        startBtn.addClass("btnClr");
+        interval = setInterval(changeChar, 800);
+    } else {
+        startBtn.text('Start');
+        startBtn.removeClass("btnClr");
+        clearInterval(interval);
+    }
+});

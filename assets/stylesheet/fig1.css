@@ -38,3 +38,23 @@ section> div {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+button {
+    width: 70px;
+    height: 40px;
+    background-color: #2cde04;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+#startBtn {
+    position: relative;
+    top: 190px;
+    left: 1730px;
+}
+
+.btnClr {
+    background-color: red;
+}
